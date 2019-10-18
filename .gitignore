@@ -1,1 +1,5 @@
+# Vargant Files
 **/.vagrant
+
+# Ansible Files
+**/*.retry
