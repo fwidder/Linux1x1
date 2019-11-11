@@ -1,6 +1,3 @@
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
 BOX_IMAGE = "hashicorp/bionic64"
 NODE_COUNT = 4
 

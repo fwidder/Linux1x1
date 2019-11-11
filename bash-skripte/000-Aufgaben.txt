@@ -1,0 +1,21 @@
+# 001:
+
+Gib "Hello World!" in der Konsole aus.
+
+# 002:
+
+Gib "Hello Nutzername!" in der Konsole aus. Der nutzername soll als Parameter an das Skript übergeben werden.
+
+Beispiel Aufruf: 
+
+fwidder@fwlenovo:~/Linux1x1/bash-skripte$ ./002-Hello-User.sh Florian
+Hello Florian
+
+# 003:
+
+Gib "Hello Nutzername!" in der Konsole aus. Der Nutzername soll aus dem System ausgelesen werden.
+
+Beispiel Aufruf:
+
+fwidder@fwlenovo:~/Linux1x1/bash-skripte$ ./003-Hello-User-V2.sh
+Hello fwidder
