@@ -6,7 +6,7 @@
 #                                                       #
 #########################################################
 
-~		-	Eigenes Homeverzeichniss
+~		    -	Eigenes Homeverzeichniss
 /bin		-	Hier liegen (fast) alle Termina Programme
 /dev		-	Hier nefindet sich jegliche an den Rechner angeschlossene Hardware
 /etc		-	Hier liegen globale Konigurationsfiles

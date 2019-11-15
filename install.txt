@@ -4,4 +4,4 @@ apt upgrade --yes
 apt install --yes nano mc git-all vagrant python software-properties-common links2 htop tree
 apt-add-repository ppa:ansible/ansible
 apt update
-apt install –yes ansible ansible-lint
+apt install --yes ansible ansible-lint

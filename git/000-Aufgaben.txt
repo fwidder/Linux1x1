@@ -1,0 +1,13 @@
+# 001:
+
+Richte Git ein:
+ - Überprüfe welche Git-Version installiert installiert
+ - Setzte deinen Nutzernamen und deine E-Mail-Adresse in der Konfiguration
+ - (optional) Schalte das speichern deiner Zugangsdaten ein
+
+# 002:
+
+ - Erstelle ein neues Git-Repo
+ - Füge deinen ersten Comit hinzu
+
+# 

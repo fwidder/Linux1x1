@@ -1,0 +1,22 @@
+#########################################################
+#							#
+# Bash Syntax	 					#
+#							#
+# Florian Widder					#
+#							#
+#########################################################
+
+# IF / ELSE :
+
+if [bedingung]
+then
+	do Something
+elif [bedingung]
+then
+	do Something else
+else
+	do whatever
+fi
+
+# SCHLEIFEN:
+
