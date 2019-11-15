@@ -9,6 +9,9 @@
 ~		    -	Eigenes Homeverzeichniss
 /bin		-	Hier liegen (fast) alle Termina Programme
 /dev		-	Hier nefindet sich jegliche an den Rechner angeschlossene Hardware
+/dev/null   -   Das "nichts"
+/dev/random -   Endlose viele Zufalsszahlen
+/dev/zero   -   Endlos viele Nullen 
 /etc		-	Hier liegen globale Konigurationsfiles
 /home		-	Hier liegen alle Homeverzeichnisse (ausser das von root)
 /opt		-	Zusätzliche Software welche nicht via Paketmanagr installiert wird
