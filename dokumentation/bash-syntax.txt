@@ -20,3 +20,93 @@ fi
 
 # SCHLEIFEN:
 
+## For each
+
+for var in liste_von_parameter
+do
+   kommando
+   ...
+   kommando
+done
+
+## For Files
+
+for datei in *
+do
+   echo $datei
+done
+
+## Array
+
+array=( 1 2 3 4 5 6 7 8 9 )
+for value in ${array[*]}
+do
+   echo $value
+done
+
+## Zählschleife
+
+for (( var=Anfangswert ; Bedingung ; Zähler ))
+do
+   kommando1
+   ...
+   kommanodn
+done
+
+## While
+
+while [bedingung]
+do
+   kommanodo_1
+   ...
+   kommando_n
+done
+
+# OPERATOREN:
+
+## Zahlen:
+
+[ var1 –eq var2 ] 			-	equal
+[ var1 –ne var2 ] 			-	not equal
+[ var1 –lt var2 ] 			-	less than
+[ var1 –gt var2 ] 			-	greater than
+[ var1 –le var2 ] 			-	less equal
+[ var1 –ge var2 ] 			-	greater equal
+
+## Text:
+
+[ "$var1" = "$var2" ]		        -	var1 gleich var2 ist
+[ "$var1" != "$var2" ]		        -	var1 ungleich var2 ist
+[ –z "$var" ] 				-	var leer ist
+[ –n "$var" ] 				-	var nicht leer ist 
+
+## Datein:
+
+[ -d Datei ]				-	Datei ist ein Verzeichniss
+[ -e Datei ]				-	Datei existiert
+[ -f Datei ]				-	Datei ist eine Datei
+[ -h Datei ]				-	Datei ist ein Link
+[ -p Datei ]				-	Datei ist eine Pipe
+[ -s Datei ]				-	Datei existiert und ist nicht leer
+[ Datei1 -nt Datei2 ]		        -	Datei1 ist neuer als Datei2
+[ Datei1 -ot Datei2 ]		        -	Datei1 ist älter als Datei2
+
+## Logik:
+
+ausdruck1 –a ausdruck2		        -	logisches Und
+ausdruck1 –o ausdruck2 		        - 	logisches Oder
+! ausdruck 				-	negierung
+
+## Pipes
+
+echo "Test.txt" | less		        -	Umleitung in Befehl
+echo "Test" > Test.txt		        -	Umleitung in Datei (overwrite)
+echo "Test" >> Test.txt		        -	Umleitung in Datei (append)
+echo <<EOF				-	Umleitung von allem zwischen EOF in den Befehl
+This line won't appear
+Hello this one will
+Hello again
+EOF
+echo "Test" &				-	Befehl im Hintergunf ausführen
+echo "a" && echo "b"		        -	Den zweiten Befehl nur ausführen wenn der erste erfolgreich war
+echo "a" ; echo "b"			-	Den zweiten Befehl auch ausführen wenn der erste nicht erfolgreich war

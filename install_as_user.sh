@@ -7,5 +7,3 @@ cd Linux1x1
 git remote rm origin
 cd vagrant
 vagrant up
-cd ~/git/Linux1x1
-rm -rf ./*.sh
