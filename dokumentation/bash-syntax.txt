@@ -6,6 +6,13 @@
 #							#
 #########################################################
 
+# VARIABLEN:
+
+$? 		-	Returncode des letzen Befehls
+$1-x		-	Übergabeparameter 1 bis x z.B.: $3 für drittes liste_von_parameter
+$Test		-	Inhalt der Variable Test
+Test=false	-	Setz Variable Test auf false 
+
 # IF / ELSE :
 
 if [bedingung]
