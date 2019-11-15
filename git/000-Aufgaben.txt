@@ -7,7 +7,4 @@ Richte Git ein:
 
 # 002:
 
- - Erstelle ein neues Git-Repo
- - Füge deinen ersten Comit hinzu
-
-# 
+https://learngitbranching.js.org/
