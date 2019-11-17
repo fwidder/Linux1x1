@@ -1,4 +1,4 @@
-# Git installieren 
+# Git installieren
 
 sudo apt install git-all
 

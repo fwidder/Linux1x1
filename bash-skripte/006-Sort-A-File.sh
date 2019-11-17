@@ -1,2 +1,2 @@
 #!/bin/bash
-sort $1 > $2
+sort $1 >$2
