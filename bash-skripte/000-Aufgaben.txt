@@ -6,9 +6,8 @@ Gib "Hello World!" in der Konsole aus.
 
 Gib "Hello Nutzername!" in der Konsole aus. Der nutzername soll als Parameter an das Skript übergeben werden.
 
-Beispiel Aufruf: 
-
-fwidder@fwlenovo:~/Linux1x1/bash-skripte$ ./002-Hello-User.sh Florian
+Beispiel Aufruf:
+linux1x1@linux1x1:~/Linux1x1/bash-skripte$ ./002-Hello-User.sh Florian
 Hello Florian
 
 # 003:
@@ -16,8 +15,13 @@ Hello Florian
 Gib "Hello Nutzername!" in der Konsole aus. Der Nutzername soll aus dem System ausgelesen werden.
 
 Beispiel Aufruf:
-
 linux1x1@linux1x1:~/Linux1x1/bash-skripte$ ./003-Hello-User-V2.sh
 Hello linux1x1
 
+# 004:
+
+Schreibe ein Skript welches die 10 größten Datein in einem Ordner Anzeigt
+
+Beispiel Aufruf:
+linux1x1@linux1x1:~/Linux1x1/bash-skripte$ ./004-Große-Datein.sh ~
 
