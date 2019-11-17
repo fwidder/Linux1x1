@@ -30,6 +30,7 @@ mv		-	Datein verschieben					-	mv file.txt /tmp/file.txt
 nano		-	Datei Editor						-	nano file.txt
 passwd		-	Passwort ändern						-	passwd user
 ping		-	IP-Adressen auf ereichbarkeit prüfen			-	ping google.de
+read		-	lesen von stdin						-	read var
 rm		-	Datein und Ordner löschen				-	rm -r /tmp
 ssh-copy-id	-	SSH-Schlüssel auf Server kopieren			-	ssh-copy-id -i ~/.ssh/id_rsa user@server
 ssh-keygen	-	SSH-Schlüssel erstellen					-	ssh-keygen -t rsa -b 4096
