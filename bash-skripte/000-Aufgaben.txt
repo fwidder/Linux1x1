@@ -23,5 +23,24 @@ Hello linux1x1
 Schreibe ein Skript welches die 10 größten Datein in einem Ordner Anzeigt
 
 Beispiel Aufruf:
-linux1x1@linux1x1:~/Linux1x1/bash-skripte$ ./004-Große-Datein.sh ~
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./004-Große-Datein.sh /bin
+Die 10 größten Datein in /bin sind:
+/bin ~/git/Linux1x1/bash-skripte
+39M     emacs-gtk
+18M     snap
+14M     qemu-system-x86_64
+14M     qemu-system-i386
+7,9M    gdb
+6,8M    ubuntu-report
+5,2M    links2
+5,2M    gnome-control-center
+4,9M    python3.7m
+4,9M    python3.7
 
+# 005:
+
+Gib alle Übergabeparameter in umgekehrter Reihenfolge aus
+
+Beispiel Aufruf:
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./005-Reverse-Args.sh 1 2 3 4 5 6
+6 5 4 3 2 1 
