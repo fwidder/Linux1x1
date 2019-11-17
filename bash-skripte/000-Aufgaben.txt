@@ -4,11 +4,10 @@ Gib "Hello World!" in der Konsole aus.
 
 # 002:
 
-Gib "Hello Nutzername!" in der Konsole aus. Der nutzername soll als Parameter an das Skript übergeben werden.
+Gib "Hello Nutzername!" in der Konsole aus. Der Nutzer Name soll als Parameter an das Skript übergeben werden.
 
-Beispiel Aufruf: 
-
-fwidder@fwlenovo:~/Linux1x1/bash-skripte$ ./002-Hello-User.sh Florian
+Beispiel Aufruf:
+linux1x1@linux1x1:~/Linux1x1/bash-skripte$ ./002-Hello-User.sh Florian
 Hello Florian
 
 # 003:
@@ -16,8 +15,68 @@ Hello Florian
 Gib "Hello Nutzername!" in der Konsole aus. Der Nutzername soll aus dem System ausgelesen werden.
 
 Beispiel Aufruf:
-
 linux1x1@linux1x1:~/Linux1x1/bash-skripte$ ./003-Hello-User-V2.sh
 Hello linux1x1
 
+# 004:
 
+Schreibe ein Skript welches die 10 größten Dateien in einem Ordner anzeigt
+
+Beispiel Aufruf:
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./004-Große-Datein.sh /bin
+Die 10 größten Datein in /bin sind:
+/bin ~/git/Linux1x1/bash-skripte
+39M     emacs-gtk
+18M     snap
+14M     qemu-system-x86_64
+14M     qemu-system-i386
+7,9M    gdb
+6,8M    ubuntu-report
+5,2M    links2
+5,2M    gnome-control-center
+4,9M    python3.7m
+4,9M    python3.7
+
+# 005:
+
+Gib alle Übergabeparameter in umgekehrter Reihenfolge aus
+
+Beispiel Aufruf:
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./005-Reverse-Args.sh 1 2 3 4 5 6
+6 5 4 3 2 1 
+
+# 006:
+
+Erstelle ein Skript, welches eine Datei einliest und den Inhalt sortiert in eine andere Datei schreibt.
+
+Beispiel Aufruf:
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ cat /tmp/out.txt 
+5
+3
+1
+2
+4
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./006-Sort-A-File.sh /tmp/in.txt /tmp/out.txt
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ cat /tmp/out.txt 
+1
+2
+3
+4
+5
+
+# 007:
+
+Die Bank:
+
+Schreibe ein Skript / File Basierte Kontoverwaltung für eine Bank:
+
+Es soll möglich sein:
+ - Konto erstellen
+ - Konto Schließen
+ - Ein- und Auszahlung
+ - Überweisungen
+ - Konto Informationen Anzeigen
+
+Zu jedem Konto sollen Kontonummer, Inhaber sowie der aktuelle Saldo gespeichert werden (Keine Historie)
+Um das Ganze zu vereinfachen sollen nur ganze Euro Beträge verwaltet werden.
+Zudem wird davon ausgegangen, dass der Nutzer (abgesehen von falschen Kontonummern) keine Fehleingaben macht.

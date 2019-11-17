@@ -9,15 +9,17 @@
 alias 		-	Alias anzeigen						-	
 apt		-	Verwaltung von Installierter Software			-	
 cat		-	Inhalt einer Datei Ausgeben				-	cat file.txt
-cd		-	Verzeichniss wechseln					-	cd ~/
-chmod		-	Tool zum verwalten von Datei Berechtigungen (Zugriff)	-	chmod +x skript.sh
-chown		-	Tool zum verwalten von Datei Berechtigugnen (Nutzer)	-	chown username file.txt
-cp		-	Datein kopieren						-	cp file.txt /tmp/file.txt
+cd		-	Verzeichnis wechseln					-	cd ~/
+chmod		-	Tool zum Verwalten von Datei Berechtigungen (Zugriff)	-	chmod +x skript.sh
+chown		-	Tool zum Verwalten von Datei Berechtigungen (Nutzer)	-	chown username file.txt
+cp		-	Dateien kopieren					-	cp file.txt /tmp/file.txt
 dd		-	Disk Dumps erstellen					-	dd if=/dev/sda1 of=/dev/sdb1
 df		-	Laufwerke und Speicherauslastung (HDD) anzeigen		-	df -ah
+du		-	Datei und Ordner Größen anzeigen			-	du -h /bin/*
 echo		-	Schreibt etwas in die Komandozeile (Print)		-	echo Test
-exit		-	Ausloggen / Bash schliessen				-	
-htop		-	erweiterte Prozess übersicht				-	
+exit		-	Ausloggen / Bash Schließen				-	
+head		-	Oberste x Zeilen anzeigen				-	head -n 15
+htop		-	erweiterte Prozess Übersicht				-	
 ipconfig	-	Netzwerk Konfigurations Tool				-	
 journalctl	-	System Logs anzeigen					-	journalctl -u nginx.service
 links2		-	Webbrowser ohne GUI					-	links2 google.de
@@ -26,18 +28,19 @@ lsusb		-	Angeschlossene USB-Geräte anzeigen			-
 man		-	Dokumentation zu so ziemlich allem			-	man man
 mcedit		-	Midnight Comannder (Datei Editor)			-	mcedit file.txt	
 mc		-	Midnight Comannder (Datei Explorer)			-	mc ~/
-mv		-	Datein verschieben					-	mv file.txt /tmp/file.txt
+mv		-	Dateien verschieben					-	mv file.txt /tmp/file.txt
 nano		-	Datei Editor						-	nano file.txt
 passwd		-	Passwort ändern						-	passwd user
-ping		-	IP-Adressen auf ereichbarkeit prüfen			-	ping google.de
-rm		-	Datein und Ordner löschen				-	rm -r /tmp
+ping		-	IP-Adressen auf Erreichbarkeit prüfen			-	ping google.de
+read		-	lesen von stdin						-	read var
+rm		-	Dateien und Ordner löschen				-	rm -r /tmp
 ssh-copy-id	-	SSH-Schlüssel auf Server kopieren			-	ssh-copy-id -i ~/.ssh/id_rsa user@server
 ssh-keygen	-	SSH-Schlüssel erstellen					-	ssh-keygen -t rsa -b 4096
-ssh		-	SSH-Verbindug herstellen				-	ssh user@server
+ssh		-	SSH-Verbindung herstellen				-	ssh user@server
 sudo		-	Befehl als root ausführen				-	sudo echo Test
-tree		-	Ordnerstrukture anzeigen				-	tree -d ~/
-top		-	Prozess übersicht					-	
+tree		-	Ordnerstruktur anzeigen					-	tree -d ~/
+top		-	Prozessübersicht					-	
 touch		-	Leere Datei erstellen					-	touch file.txt
-wget		-	Datein herunterladen					-	wget https://support.oneskyapp.com/hc/en-us/article_attachments/202761627/example_1.json
+wget		-	Dateien herunterladen					-	wget https://support.oneskyapp.com/hc/en-us/article_attachments/202761627/example_1.json
 which		-	Anzeigen welches Binäry hinter einem Befehl liegt	-	which ls
-whoami		-	Ausfühenden Nutzernamen ausgeben			-
+whoami		-	Ausführenden Nutzernamen ausgeben			-

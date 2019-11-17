@@ -1,9 +1,9 @@
 # 001:
 
 Richte Git ein:
- - Überprüfe welche Git-Version installiert installiert
+ - Überprüfe welche Git-Version installiert
  - Setzte deinen Nutzernamen und deine E-Mail-Adresse in der Konfiguration
- - (optional) Schalte das speichern deiner Zugangsdaten ein
+ - (optional) Schalte das Speichern deiner Zugangsdaten ein
 
 # 002:
 

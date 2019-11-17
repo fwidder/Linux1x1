@@ -6,18 +6,18 @@
 #                                                       #
 #########################################################
 
-~		    -	Eigenes Homeverzeichniss
-/bin		-	Hier liegen (fast) alle Termina Programme
-/dev		-	Hier nefindet sich jegliche an den Rechner angeschlossene Hardware
-/dev/null   -   Das "nichts"
-/dev/random -   Endlose viele Zufalsszahlen
-/dev/zero   -   Endlos viele Nullen 
-/etc		-	Hier liegen globale Konigurationsfiles
-/home		-	Hier liegen alle Homeverzeichnisse (ausser das von root)
-/opt		-	Zusätzliche Software welche nicht via Paketmanagr installiert wird
-/root		-	Homeverzeichniss von root
+~		-	Eigenes Homeverzeichnis
+/bin		-	Hier liegen (fast) alle Terminal Programme
+/dev		-	Hier befindet sich jegliche an den Rechner angeschlossene Hardware
+/dev/null   	-	Das "nichts"
+/dev/random 	-	Endlose viele Zufallszahlen
+/dev/zero   	-	Endlos viele Nullen 
+/etc		-	Hier liegen globale Konfigurationsdatein
+/home		-	Hier liegen alle Homeverzeichnisse (Außer das von root)
+/opt		-	Zusätzliche Software welche nicht via Paketmanager installiert wird
+/root		-	Homeverzeichnis von root
 /sbin		-	Programme welche nur von root ausgeführt werden können / dürfen
-/srv		-	Hier liegen normalerweise Datein für Web- oder FTP-Server
-/tmp		-	Temporäres Verzeichniss (wird beim neustart gelöscht)
+/srv		-	Hier liegen normalerweise Dateien für Web- oder FTP-Server
+/tmp		-	Temporäres Verzeichnis (wird beim Neustart gelöscht)
 /usr		-	Benutzer Software
 /var		-	Variable Daten z.B.: Logs
