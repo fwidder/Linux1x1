@@ -50,3 +50,33 @@ linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./005-Reverse-Args.sh 1 2 3 4 5 6
 Erstelle ein Skript welches eine Datei einliest und den Inhalt sortiert in eine andere Datei schreibt.
 
 Beispiel Aufruf:
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ cat /tmp/out.txt 
+5
+3
+1
+2
+4
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./006-Sort-A-File.sh /tmp/in.txt /tmp/out.txt
+linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ cat /tmp/out.txt 
+1
+2
+3
+4
+5
+
+# 007:
+
+Die Bank:
+
+Schreibe eine Skript / File Basierte Kontoverwaltung für eine Bank:
+
+Es soll möglich sein:
+ - Konto erstellen
+ - Konto Schliessen
+ - Ein- und Auszahlung
+ - Überweisungen
+ - Konto Informationen Anzeigen
+
+Zu jedem Konto sollen Kontonummer, Inhaber sowie der aktuelle Saldo gespeichert werden (Keine Historie)
+Um das ganze zu vereinfachen sollen nur ganze Euro beträge verwaltet werden.
+Zudem wird davon asugegangen das der Nutzer (abgesehen von falschen Kontonummern) keine Fehleingaben macht.
