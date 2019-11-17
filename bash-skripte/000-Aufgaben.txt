@@ -44,3 +44,9 @@ Gib alle Übergabeparameter in umgekehrter Reihenfolge aus
 Beispiel Aufruf:
 linux1x1@linux1x1:~/git/Linux1x1/bash-skripte$ ./005-Reverse-Args.sh 1 2 3 4 5 6
 6 5 4 3 2 1 
+
+# 006:
+
+Erstelle ein Skript welches eine Datei einliest und den Inhalt sortiert in eine andere Datei schreibt.
+
+Beispiel Aufruf:
