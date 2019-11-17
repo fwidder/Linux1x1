@@ -15,8 +15,10 @@ chown		-	Tool zum verwalten von Datei Berechtigugnen (Nutzer)	-	chown username f
 cp		-	Datein kopieren						-	cp file.txt /tmp/file.txt
 dd		-	Disk Dumps erstellen					-	dd if=/dev/sda1 of=/dev/sdb1
 df		-	Laufwerke und Speicherauslastung (HDD) anzeigen		-	df -ah
+du		-	Datei und Ordner Größen anzeigen			-	du -h /bin/*
 echo		-	Schreibt etwas in die Komandozeile (Print)		-	echo Test
 exit		-	Ausloggen / Bash schliessen				-	
+head		-	Oberste x Zeilen anzeigen				-	head -n 15
 htop		-	erweiterte Prozess übersicht				-	
 ipconfig	-	Netzwerk Konfigurations Tool				-	
 journalctl	-	System Logs anzeigen					-	journalctl -u nginx.service
