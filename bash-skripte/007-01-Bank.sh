@@ -27,6 +27,14 @@ case "$1" in
   ;;
 *)
   echo "Die gewählte Funktion $1 existiert nicht!"
+  echo "Verfügbar sind:"
+  echo '  oeffnen FOLDER KNR NAME SALDO'
+  echo '  schliessen FOLDER KNR'
+  echo '  transfer FOLDER KNRVON KNRNACH BETRAG'
+  echo '  einzahlen FOLDER KNR BETRAG'
+  echo '  auszahlen FOLDER KNR BETRAG'
+  echo '  info FOLDER KNR'
   exit 1
   ;;
 esac
+

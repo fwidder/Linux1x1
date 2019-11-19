@@ -19,12 +19,14 @@ NAMEEmpfaenger="$(cat $KNREmpfaenger | head -n1)"
 
 popd
 
-echo "Möchten sie $BETRAG € auf von $NAMESender (KNR $KNRSender) an $NAMEEmpfaenger (KNR $KNREmpfaenger) überweisen? (ja/nein)"
+echo "Möchten sie $BETRAG € von $NAMESender (KNR $KNRSender) an $NAMEEmpfaenger (KNR $KNREmpfaenger) überweisen? (ja/nein)"
 read choise
 if [ "$choise" = "ja" ]; then
 
-  ./007-06-Auszahlen.sh $WRKDIR $KNRSender $BETRAG
-  ./007-05-Einzahlen.sh $WRKDIR $KNREmpfaenger $BETRAG
+  ./007-06-Auszahlen.sh $WRKDIR $KNRSender $BETRAG FORCE
+  ./007-05-Einzahlen.sh $WRKDIR $KNREmpfaenger $BETRAG FORCE
+  ./007-07-Info.sh $WRKDIR $KNRSender
+  ./007-07-Info.sh $WRKDIR $KNREmpfaenger
   exit 0
 fi
 echo "Vorgang abgebrochen!"
