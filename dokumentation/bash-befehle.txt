@@ -6,7 +6,7 @@
 #							#
 #########################################################
 
-alias 		-	Alias anzeigen						-	
+alias		-	Alias anzeigen						-	
 apt		-	Verwaltung von Installierter Software			-	
 cat		-	Inhalt einer Datei Ausgeben				-	cat file.txt
 cd		-	Verzeichnis wechseln					-	cd ~/
@@ -20,7 +20,7 @@ echo		-	Schreibt etwas in die Komandozeile (Print)		-	echo Test
 exit		-	Ausloggen / Bash Schließen				-	
 head		-	Oberste x Zeilen anzeigen				-	head -n 15
 htop		-	erweiterte Prozess Übersicht				-	
-ipconfig	-	Netzwerk Konfigurations Tool				-	
+ifconfig	-	Netzwerk Konfigurations Tool				-	
 journalctl	-	System Logs anzeigen					-	journalctl -u nginx.service
 links2		-	Webbrowser ohne GUI					-	links2 google.de
 ls		-	Datei Explorer						-	ls -ahl
@@ -44,3 +44,4 @@ touch		-	Leere Datei erstellen					-	touch file.txt
 wget		-	Dateien herunterladen					-	wget https://support.oneskyapp.com/hc/en-us/article_attachments/202761627/example_1.json
 which		-	Anzeigen welches Binäry hinter einem Befehl liegt	-	which ls
 whoami		-	Ausführenden Nutzernamen ausgeben			-
+

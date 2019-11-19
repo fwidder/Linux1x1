@@ -21,3 +21,4 @@
 /tmp		-	Temporäres Verzeichnis (wird beim Neustart gelöscht)
 /usr		-	Benutzer Software
 /var		-	Variable Daten z.B.: Logs
+
