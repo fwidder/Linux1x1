@@ -12,6 +12,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "file", source: "~/.ssh/id_rsa.pub", destination: "/home/vagrant/.ssh/me.pub"
   config.vm.provision "shell", inline: <<-SHELL
+    apt-get update
+    apt-get install software-properties-common
     add-apt-repository ppa:jonathonf/python-3.6
     apt-get update
     apt-get --yes install python3.6
