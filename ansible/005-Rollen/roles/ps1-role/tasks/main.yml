@@ -1,0 +1,8 @@
+---
+# tasks file for ps1-role
+- name: PS1 hinzufügen
+  lineinfile:
+    path: "~/.bash_profile"
+    regexp: ".*PS1=[^=].*"
+    create: yes
+    line: "PS1={{ ps1 }}"

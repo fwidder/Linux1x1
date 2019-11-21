@@ -1,0 +1,3 @@
+---
+# defaults file for ps1-role
+ps1: "'Test : '"
