@@ -1,0 +1,7 @@
+---
+- hosts: webserver
+  name: deploy all webservers
+  tasks:
+  - name: deploy webserver
+    include_role:
+      name: web-role

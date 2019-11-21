@@ -1,0 +1,7 @@
+---
+- hosts: appserver
+  name: deploy all appservers
+  tasks:
+  - name: deploy appserver
+    include_role:
+      name: app-role

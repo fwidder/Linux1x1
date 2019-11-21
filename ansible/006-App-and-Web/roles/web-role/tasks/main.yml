@@ -1,0 +1,18 @@
+---
+# tasks file for web-role
+- name: install nginx
+  become: yes
+  apt:
+    name: nginx
+    state: present
+
+- name: copy config
+  become: yes
+  template:
+    src: default.j2
+    dest: /etc/nginx/sites-enabled/default
+  
+- name: Restart nginx
+  service:
+    name: nginx
+    state: restarted
