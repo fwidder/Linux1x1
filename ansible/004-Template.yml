@@ -1,0 +1,9 @@
+---
+- hosts: all
+  vars:
+    array: [ "a", "b", "c" ]
+  tasks:
+  - name: Template a File
+    template:
+      src: ./004-Test-Template.txt.j2
+      dest: ~/Test-Template.txt

@@ -1,5 +1,5 @@
 ---
-all:
+nodes:
   hosts:
     node-1:
       ansible_user: "vagrant"

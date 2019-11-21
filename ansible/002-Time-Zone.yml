@@ -1,0 +1,18 @@
+---
+- hosts: all
+  tasks:
+  - name: Get Timezone
+    shell: timedatectl | grep Timezone  
+    register: out
+ 
+  - name: Print Timezone
+    debug:
+      msg: "{{ out.stdout }}"
+ 
+  - name: Print Timzone Facts
+    debug:
+      msg: "{{ ansible_date_time.tz }}"
+ 
+  - name: Print Timzone Facts
+    debug:
+      msg: "{{ facter_timezone }}"

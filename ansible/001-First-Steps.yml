@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+  - name: Hello Server
+    debug:
+      msg: "{{ Test }}"  
