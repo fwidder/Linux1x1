@@ -1,0 +1,11 @@
+---
+webserver:
+  hosts:
+    node-3:
+      ansible_user: "vagrant"
+      ansible_host: "10.0.0.13"
+appserver:
+  hosts:
+    node-2:
+      ansible_user: "vagrant"
+      ansible_host: "10.0.0.12"

@@ -1,0 +1,11 @@
+---
+# tasks file for app-role
+- include: install.yml
+
+- name: copy info.php
+  become: yes
+  copy:
+    src: info.php
+    dest: /var/www/html/info.php
+  notify:
+    - restart apache  

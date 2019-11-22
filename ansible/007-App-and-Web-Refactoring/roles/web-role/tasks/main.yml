@@ -1,0 +1,29 @@
+---
+# tasks file for web-role
+- name: install nginx
+  become: yes
+  apt:
+    name: nginx
+    state: present
+
+- name: copy config
+  become: yes
+  template:
+    src: default.j2
+    dest: /etc/nginx/sites-enabled/default
+  register: config
+  
+- block:
+  - name: Restart nginx
+    service:
+      name: nginx
+      state: restarted
+    register: restart_out
+  - name: Print Restart
+    debug:
+      msg: "{{ restart_out }}"
+  when: config.changed    
+
+- name: Ignore Fail
+  command: /bin/false
+  ignore_errors: yes

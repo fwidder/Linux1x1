@@ -1,0 +1,11 @@
+---
+# tasks file for install apache and php
+- name: "install apache and php5"
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+  - apache2
+  - php5
+

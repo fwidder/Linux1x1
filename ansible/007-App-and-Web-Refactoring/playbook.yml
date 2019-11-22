@@ -1,0 +1,12 @@
+---
+- hosts: all
+  name: deploy all
+  tasks:
+  - name: deploy webserver
+    include_role:
+      name: web-role
+    when: inventory_hostname in groups['webserver']
+  - name: deploy appserver
+    include_role:
+      name: app-role
+    when: inventory_hostname in groups['appserver']
