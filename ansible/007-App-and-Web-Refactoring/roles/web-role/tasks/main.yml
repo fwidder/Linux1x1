@@ -5,13 +5,15 @@
   apt:
     name: nginx
     state: present
+  tags: install
 
 - name: copy config
   become: yes
   template:
     src: default.j2
     dest: /etc/nginx/sites-enabled/default
-  register: config
+  register: config_changed
+  tags: config
   
 - block:
   - name: Restart nginx
@@ -22,7 +24,8 @@
   - name: Print Restart
     debug:
       msg: "{{ restart_out }}"
-  when: config.changed    
+  when: config_changed.changed    
+  tags: config
 
 - name: Ignore Fail
   command: /bin/false

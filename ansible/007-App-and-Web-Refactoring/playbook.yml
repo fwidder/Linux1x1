@@ -6,7 +6,10 @@
     include_role:
       name: web-role
     when: inventory_hostname in groups['webserver']
+    tags: web
+
   - name: deploy appserver
     include_role:
       name: app-role
     when: inventory_hostname in groups['appserver']
+    tags: app
